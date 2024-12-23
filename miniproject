@@ -20,10 +20,10 @@ void addBook() {
     }
 
     printf("Enter the title of the book: ");
-    scanf("%s", library[bookCount].title);  
+    scanf("%s", library[bookCount].title);  // Simple input using scanf
 
     printf("Enter the author of the book: ");
-    scanf("%s", library[bookCount].author);  
+    scanf("%s", library[bookCount].author);  // Simple input using scanf
 
     printf("Enter the publication year: ");
     scanf("%d", &library[bookCount].year);
@@ -48,10 +48,11 @@ void viewLibrary() {
     }
 }
 
- {
+// Function to search for a book by title
+void searchBook() {
     char searchTitle[100];
     printf("Enter the title of the book to search: ");
-    scanf("%s", searchTitle);  
+    scanf("%s", searchTitle);  // Simple input using scanf
 
     for (int i = 0; i < bookCount; i++) {
         if (strcmp(library[i].title, searchTitle) == 0) {
